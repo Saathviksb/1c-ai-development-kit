@@ -1,0 +1,35 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Credentials (just in case)
+*.env
+.env.*
+credentials.json
+*.key
+*.pem
+
+# User-specific
+.cursor/emergency-mode.json
+.cursor/mcp-status-report.md
+.cursor/DAILY-CHECKLIST.md
+.cursor/EMERGENCY-OPTIMIZATION.md
+
+# Build artifacts
+dist/
+build/
