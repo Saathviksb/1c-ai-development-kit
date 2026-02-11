@@ -1,4 +1,4 @@
-# Часто задаваемые вопросы (FAQ)
+﻿# Часто задаваемые вопросы (FAQ)
 
 ## Общие вопросы
 
@@ -23,7 +23,7 @@
 ### Как установить базовый набор?
 
 ```bash
-git clone https://gitea.yourdomain.com/yourname/1c-ai-development-kit.git
+git clone https://github.com/Jefest9988/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 
 # Скопируйте в ваш проект
@@ -291,4 +291,4 @@ MIT License — можно использовать, модифицироват�
 
 ---
 
-**Не нашли ответ?** Создайте [issue](https://gitea.yourdomain.com/yourname/1c-ai-development-kit/issues) или напишите нам!
+**Не нашли ответ?** Создайте [issue](https://github.com/Jefest9988/1c-ai-development-kit/issues) или напишите нам!

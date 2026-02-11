@@ -1,5 +1,10 @@
 # 1C AI Development Kit
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/github/release/Jefest9988/1c-ai-development-kit.svg)](https://github.com/Jefest9988/1c-ai-development-kit/releases)
+[![GitHub stars](https://img.shields.io/github/stars/Jefest9988/1c-ai-development-kit.svg)](https://github.com/Jefest9988/1c-ai-development-kit/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/Jefest9988/1c-ai-development-kit.svg)](https://github.com/Jefest9988/1c-ai-development-kit/issues)
+
 > Комплексный набор инструментов для разработки на платформе 1С:Предприятие с использованием AI-ассистентов в Cursor IDE
 
 ## 🎯 Что это?
@@ -26,7 +31,7 @@
 1. **Клонируйте репозиторий:**
 
 ```bash
-git clone https://gitea.yourdomain.com/yourname/1c-ai-development-kit.git
+git clone https://github.com/Jefest9988/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 ```
 
@@ -311,7 +316,7 @@ MIT License - см. [LICENSE](LICENSE)
 
 - 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
-- 🐙 GitHub: [github.com/yourusername/1c-ai-development-kit](https://github.com/yourusername/1c-ai-development-kit)
+- 🐙 GitHub: [github.com/Jefest9988/1c-ai-development-kit](https://github.com/Jefest9988/1c-ai-development-kit)
 
 ## 🗺️ Roadmap
 

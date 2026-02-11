@@ -1,4 +1,4 @@
-# Участие в разработке
+﻿# Участие в разработке
 
 Спасибо за интерес к проекту! Мы рады любому вкладу — от сообщений об ошибках до новых функций.
 
@@ -6,7 +6,7 @@
 
 ### 🐛 Сообщить об ошибке
 
-1. Проверьте, нет ли уже [похожей issue](https://gitea.yourdomain.com/yourname/1c-ai-development-kit/issues)
+1. Проверьте, нет ли уже [похожей issue](https://github.com/Jefest9988/1c-ai-development-kit/issues)
 2. Создайте новую issue с описанием:
    - Что вы делали
    - Что ожидали
@@ -47,7 +47,7 @@
 
 ```bash
 # Клонируйте репозиторий
-git clone https://gitea.yourdomain.com/yourname/1c-ai-development-kit.git
+git clone https://github.com/Jefest9988/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 
 # Создайте ветку для работы
@@ -194,7 +194,7 @@ AI: [использует навык 1c-forms/scaffold]
 
 - 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
-- 🐙 GitHub Issues: [github.com/yourusername/1c-ai-development-kit/issues](https://github.com/yourusername/1c-ai-development-kit/issues)
+- 🐙 GitHub Issues: [github.com/Jefest9988/1c-ai-development-kit/issues](https://github.com/Jefest9988/1c-ai-development-kit/issues)
 
 ## Благодарности
 

@@ -1,4 +1,4 @@
-# Публикация на GitHub
+﻿# Публикация на GitHub
 
 Этот документ описывает шаги для публикации проекта на GitHub после тестирования в локальном Gitea.
 
@@ -28,7 +28,7 @@ grep -r "rarus" .cursor/ docs/ README.md
 
 Замените в файлах:
 
-- `gitea.yourdomain.com` → `github.com/yourusername`
+- `gitea.yourdomain.com` → `github.com/Jefest9988`
 - Добавьте реальные контакты (Telegram, Email)
 - Добавьте ссылку на платные MCP (если есть)
 
@@ -47,7 +47,7 @@ grep -r "rarus" .cursor/ docs/ README.md
 cd c:\Users\Arman\workspace\1c-ai-development-kit
 
 # Добавьте GitHub remote
-git remote add github https://github.com/yourusername/1c-ai-development-kit.git
+git remote add github https://github.com/Jefest9988/1c-ai-development-kit.git
 
 # Проверьте
 git remote -v
@@ -87,8 +87,8 @@ git push github v1.0.0
 
 ```markdown
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub release](https://img.shields.io/github/release/yourusername/1c-ai-development-kit.svg)](https://github.com/yourusername/1c-ai-development-kit/releases)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/1c-ai-development-kit.svg)](https://github.com/yourusername/1c-ai-development-kit/stargazers)
+[![GitHub release](https://img.shields.io/github/release/Jefest9988/1c-ai-development-kit.svg)](https://github.com/Jefest9988/1c-ai-development-kit/releases)
+[![GitHub stars](https://img.shields.io/github/stars/Jefest9988/1c-ai-development-kit.svg)](https://github.com/Jefest9988/1c-ai-development-kit/stargazers)
 ```
 
 ### 4. Создание документации (GitHub Pages)

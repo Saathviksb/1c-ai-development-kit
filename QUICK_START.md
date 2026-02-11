@@ -1,4 +1,4 @@
-# Quick Start
+﻿# Quick Start
 
 Быстрый старт для нетерпеливых 😊
 
@@ -7,7 +7,7 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://gitea.yourdomain.com/yourname/1c-ai-development-kit.git
+git clone https://github.com/Jefest9988/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 ```
 
@@ -43,7 +43,7 @@ AI автоматически использует агента `onec-code-revie
 
 ```bash
 # Установка
-git clone https://github.com/yourusername/bsl-lsp-bridge.git
+git clone https://github.com/Jefest9988/bsl-lsp-bridge.git
 cd bsl-lsp-bridge
 npm install
 node server.js
@@ -71,7 +71,7 @@ node server.js
 
 ```bash
 # Установка
-git clone https://github.com/yourusername/rlm-toolkit.git
+git clone https://github.com/Jefest9988/rlm-toolkit.git
 cd rlm-toolkit
 pip install -r requirements.txt
 python server.py
@@ -140,5 +140,5 @@ python server.py
 
 - 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
-- 🐛 Issues: https://github.com/yourusername/1c-ai-development-kit/issues
+- 🐛 Issues: https://github.com/Jefest9988/1c-ai-development-kit/issues
 - 🌐 Сообщество: [t.me/comol_it_does_matter](https://t.me/comol_it_does_matter) (вайбкодинг для 1С)

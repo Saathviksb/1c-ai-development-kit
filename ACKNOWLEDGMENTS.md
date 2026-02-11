@@ -1,4 +1,4 @@
-# Благодарности
+﻿# Благодарности
 
 Этот проект стал возможен благодаря вкладу многих людей и сообществ.
 
@@ -132,7 +132,7 @@ RLM-toolkit — один из двух **бесплатных** MCP-сервер
 
 - 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
-- 🐙 GitHub: [github.com/yourusername/1c-ai-development-kit](https://github.com/yourusername/1c-ai-development-kit)
+- 🐙 GitHub: [github.com/Jefest9988/1c-ai-development-kit](https://github.com/Jefest9988/1c-ai-development-kit)
 
 ---
 
