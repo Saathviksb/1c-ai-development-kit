@@ -120,7 +120,7 @@ node server.js
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourusername/rlm-toolkit.git
+git clone https://github.com/dmitrii-labintsev/rlm-toolkit.git
 cd rlm-toolkit
 ```
 
