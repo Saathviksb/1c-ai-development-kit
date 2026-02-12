@@ -1,4 +1,4 @@
-﻿# Quick Start
+# Quick Start
 
 Быстрый старт для нетерпеливых 😊
 
@@ -41,10 +41,12 @@ AI автоматически использует агента `onec-code-revie
 
 #### BSL LSP Bridge (анализ кода)
 
+**Автор:** [Vladimir Akimov (SteelMorgan)](https://github.com/SteelMorgan)
+
 ```bash
 # Установка
-git clone https://github.com/Jefest9988/bsl-lsp-bridge.git
-cd bsl-lsp-bridge
+git clone https://github.com/SteelMorgan/mcp-bsl-lsp-bridge.git
+cd mcp-bsl-lsp-bridge
 npm install
 node server.js
 ```
@@ -69,9 +71,11 @@ node server.js
 
 #### RLM Toolkit (память между чатами)
 
+**Автор:** [Dmitrii Labintsev](https://habr.com/ru/articles/986702/)
+
 ```bash
 # Установка
-git clone https://github.com/Jefest9988/rlm-toolkit.git
+git clone https://github.com/dmitrii-labintsev/rlm-toolkit.git
 cd rlm-toolkit
 pip install -r requirements.txt
 python server.py
