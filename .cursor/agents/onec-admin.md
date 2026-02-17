@@ -31,7 +31,7 @@ RLM:
 
 ## Архитектурное решение (2026-02-06)
 
-Серверы 1С работают **локально на ноутбуке** (Windows-сервисы). HASP эмулятор — тоже на ноутбуке. PostgreSQL — на сервере (LXC 104). Docker-контейнеры серверов 1С — **deprecated** (HASP не работает на Linux).
+Серверы 1С работают **локально на ноутбуке** (Windows-сервисы). HASP эмулятор — тоже на ноутбуке. PostgreSQL — на сервере (LXC XXX). Docker-контейнеры серверов 1С — **deprecated** (HASP не работает на Linux).
 
 ## Серверы 1С (ноутбук, Windows-сервисы)
 
@@ -41,9 +41,9 @@ RLM:
 | 8.3.24 | :1640 | :1641 | 1660-1691 | C:\1C\2\srvinfo |
 | 8.3.27 | :1740 | :1741 | 1760-1791 | C:\1C\3\srvinfo |
 
-## PostgreSQL (сервер, LXC 104)
+## PostgreSQL (сервер, LXC XXX)
 
-- **IP:** 192.168.0.107:5432
+- **IP:** YOUR_SERVER:5432
 - **User:** postgres / postgres
 - **Образ:** antohandd/postgres1c (v15.5-6.1C)
 - **SSH:** `ssh YOUR_SERVER "pct exec 104 -- <cmd>"`

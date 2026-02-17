@@ -72,7 +72,8 @@ AI (использует PROJECT-graph-cypher):
 
 ```bash
 # Установите индексатор
-git clone https://github.com/yourusername/1c-mcp-indexer.git
+# Примечание: Это пример, реальный репозиторий может отличаться
+git clone https://github.com/your-indexer-repo/1c-mcp-indexer.git
 cd 1c-mcp-indexer
 
 # Настройте API ключ
@@ -108,7 +109,8 @@ python indexer.py \
 
 ```bash
 # Установите индексатор
-git clone https://github.com/yourusername/1c-mcp-indexer.git
+# Примечание: Это пример, реальный репозиторий может отличаться
+git clone https://github.com/your-indexer-repo/1c-mcp-indexer.git
 cd 1c-mcp-indexer
 
 # Установите зависимости

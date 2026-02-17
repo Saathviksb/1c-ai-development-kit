@@ -417,7 +417,7 @@ After indexing completes (~40-60 minutes):
 # Ctrl+Shift+P → "Reload Window"
 ```
 
-**Local model:** `qwen3:8b` via Ollama @ CT 106 (192.168.0.106:11434)
+**Local model:** `qwen3:8b` via Ollama @ CT XXX (YOUR_RLM_SERVER:11434)
 
 #### 3. Enable/Disable Project MCP
 

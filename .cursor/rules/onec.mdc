@@ -7,7 +7,7 @@ globs: configs/onec-*/**,scripts/onec-*
 
 ## Архитектурное решение (2026-02-06)
 
-Серверы 1С работают **локально на ноутбуке** (Windows-сервисы). HASP эмулятор — тоже на ноутбуке. PostgreSQL — на сервере (LXC 104). Docker-контейнеры серверов 1С на Linux — **deprecated** (HASP не работает).
+Серверы 1С работают **локально на ноутбуке** (Windows-сервисы). HASP эмулятор — тоже на ноутбуке. PostgreSQL — на сервере (LXC XXX). Docker-контейнеры серверов 1С на Linux — **deprecated** (HASP не работает).
 
 ## Серверы 1С (ноутбук)
 
@@ -17,7 +17,7 @@ globs: configs/onec-*/**,scripts/onec-*
 | 8.3.24 | :1640 | :1641 | 1660-1691 | C:\1C\2\srvinfo |
 | 8.3.27 | :1740 | :1741 | 1760-1791 | C:\1C\3\srvinfo |
 
-## PostgreSQL (LXC 104, 192.168.0.107)
+## PostgreSQL (LXC XXX, YOUR_SERVER)
 
 - **Образ:** antohandd/postgres1c (v15.5-6.1C, mchar/fasttrun)
 - **Порт:** 5432, **User:** postgres / postgres
