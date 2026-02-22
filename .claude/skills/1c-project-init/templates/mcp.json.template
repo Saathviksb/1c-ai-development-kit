@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+    "rlm-toolkit": {
+      "type": "sse",
+      "url": "http://YOUR_RLM_SERVER:8200/sse"
+    },
+    "1c-help": {
+      "type": "sse",
+      "url": "http://YOUR_MCP_SERVER:8003/mcp"
+    },
+    "1c-ssl": {
+      "type": "sse",
+      "url": "http://YOUR_MCP_SERVER:8008/mcp"
+    },
+    "1c-templates": {
+      "type": "sse",
+      "url": "http://YOUR_MCP_SERVER:8004/mcp"
+    },
+    "1c-syntax-checker": {
+      "type": "sse",
+      "url": "http://YOUR_MCP_SERVER:8002/mcp"
+    },
+    "1c-code-checker": {
+      "type": "sse",
+      "url": "http://YOUR_MCP_SERVER:8007/mcp"
+    },
+    "1c-forms": {
+      "type": "sse",
+      "url": "http://YOUR_MCP_SERVER:8011/mcp"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "mcp-bsl-lsp": {
+      "command": "ssh",
+      "args": ["root@YOUR_GITEA_SERVER", "docker exec -i mcp-lsp-{{PROJECT_NAME}} /app/mcp-lsp-bridge mcp"]
+    },
+    "edt-mcp": {
+      "type": "http",
+      "url": "http://YOUR_EDT_SERVER:8765/mcp"
+    },
+    "1c-ai-debug": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\Arman\\workspace\\1c-ai-debug-extension\\mcp-1c-bridge.py",
+        "--url", "http://localhost/{{PUBLICATION}}/hs/ai",
+        "--user", "Admin",
+        "--password", ""
+      ]
+    }
+  }
+}

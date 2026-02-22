@@ -1,4 +1,4 @@
-﻿# Задача для следующего чата (Opus)
+# Задача для следующего чата (Opus)
 
 ## Контекст
 
@@ -57,21 +57,21 @@
 
 ## Файлы
 
-- **Скрипт:** `C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1`
+- **Скрипт:** `C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1`
 - **Проблемное место:** Шаг 4 (Creating config) - строки 89-106
-- **Тестовый проект:** `C:\Users\YOUR_USERNAME\workspace\MinimKG_test` (можно удалить и пересоздать)
-- **Эталон:** `C:\Users\YOUR_USERNAME\workspace\MinimKG_old\.1c-devbase.bat` (рабочий пример)
+- **Тестовый проект:** `C:\Users\Arman\workspace\MinimKG_test` (можно удалить и пересоздать)
+- **Эталон:** `C:\Users\Arman\workspace\MinimKG_old\.1c-devbase.bat` (рабочий пример)
 
 ## Тестирование
 
 После исправления запустить:
 
 ```powershell
-cd C:\Users\YOUR_USERNAME\workspace
+cd C:\Users\Arman\workspace
 if (Test-Path "MinimKG_test") { Remove-Item "MinimKG_test" -Recurse -Force }
 
-C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1 `
-  -ProjectPath "C:\Users\YOUR_USERNAME\workspace\MinimKG_test" `
+C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1 `
+  -ProjectPath "C:\Users\Arman\workspace\MinimKG_test" `
   -Server "localhost:1641" `
   -Database "Minim_kg" `
   -Username "Бухгалтер" `

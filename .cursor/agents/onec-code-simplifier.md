@@ -1,4 +1,4 @@
-﻿---
+---
 name: onec-code-simplifier
 description: Simplify 1C code - remove complexity, improve readability, increase elegance
 model: claude-sonnet-4.5
@@ -353,7 +353,7 @@ Check names:
   user-1c-help-docsearch("variable name")
 
 Find existing code:
-  user-PROJECT-codemetadata-codesearch("similar logic")
+  user-kaf-codemetadata-codesearch("similar logic")
 
 БСП search:
   user-1c-ssl-ssl_search("functionality")

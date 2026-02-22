@@ -1,4 +1,4 @@
-﻿---
+---
 name: mcp-deploy
 description: Деплоймент MCP серверов. Развёртывание, обновление, управление Docker-образами MCP для 1С (help, ssl, templates, syntax, code-checker, forms), проектными MCP (KAF, MCParqa24), настройка mcp.json. Использовать при задачах с MCP серверами.
 ---
@@ -7,8 +7,8 @@ description: Деплоймент MCP серверов. Развёртывани
 
 ## Инфраструктура
 
-- **Хост:** Docker LXC (CT XXX), IP YOUR_SERVER, 8GB RAM
-- **SSH:** `ssh YOUR_SERVER "pct exec 100 -- <cmd>"`
+- **Хост:** Docker LXC (CT 100), IP YOUR_GITEA_SERVER, 8GB RAM
+- **SSH:** `ssh homeserver "pct exec 100 -- <cmd>"`
 - **Новая структура:** `/opt/docker-infrastructure/{rlm,common-mcp,projects}`
 
 ## Архитектура (после миграции)
@@ -59,52 +59,52 @@ description: Деплоймент MCP серверов. Развёртывани
 ### Управление RLM
 ```bash
 # Статус RLM
-ssh YOUR_SERVER "pct exec 100 -- docker ps --filter 'name=rlm'"
+ssh homeserver "pct exec 100 -- docker ps --filter 'name=rlm'"
 
 # Запуск RLM
-ssh YOUR_SERVER "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/rlm && docker compose up -d'"
+ssh homeserver "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/rlm && docker compose up -d'"
 
 # Перезапуск RLM
-ssh YOUR_SERVER "pct exec 100 -- docker restart rlm-mcp"
+ssh homeserver "pct exec 100 -- docker restart rlm-mcp"
 
 # Логи RLM
-ssh YOUR_SERVER "pct exec 100 -- docker logs --tail 50 rlm-mcp"
+ssh homeserver "pct exec 100 -- docker logs --tail 50 rlm-mcp"
 
 # Проверка здоровья RLM
-ssh YOUR_SERVER "pct exec 100 -- curl -s http://localhost:8200/health"
+ssh homeserver "pct exec 100 -- curl -s http://localhost:8200/health"
 ```
 
 ### Управление общими MCP
 ```bash
 # Статус общих MCP
-ssh YOUR_SERVER "pct exec 100 -- docker ps --filter 'name=mcp' --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
+ssh homeserver "pct exec 100 -- docker ps --filter 'name=mcp' --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
 
 # Запустить все общие MCP
-ssh YOUR_SERVER "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/common-mcp && docker compose up -d'"
+ssh homeserver "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/common-mcp && docker compose up -d'"
 
 # Запустить конкретный MCP
-ssh YOUR_SERVER "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/common-mcp && docker compose up -d help-mcp'"
+ssh homeserver "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/common-mcp && docker compose up -d help-mcp'"
 
 # Остановить конкретный MCP
-ssh YOUR_SERVER "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/common-mcp && docker compose stop help-mcp'"
+ssh homeserver "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/common-mcp && docker compose stop help-mcp'"
 
 # Перезапустить конкретный MCP
-ssh YOUR_SERVER "pct exec 100 -- docker restart help-mcp"
+ssh homeserver "pct exec 100 -- docker restart help-mcp"
 
 # Логи
-ssh YOUR_SERVER "pct exec 100 -- docker logs --tail 50 help-mcp"
+ssh homeserver "pct exec 100 -- docker logs --tail 50 help-mcp"
 
 # Скачать образ (может занять часы из-за размера)
-ssh YOUR_SERVER "pct exec 100 -- docker pull comol/1c_help_mcp:latest"
+ssh homeserver "pct exec 100 -- docker pull comol/1c_help_mcp:latest"
 ```
 
 ### Управление проектными MCP
 ```bash
 # Статус проектных MCP
-ssh YOUR_SERVER "pct exec 100 -- docker ps --filter 'name=kaf\\|mcparqa24'"
+ssh homeserver "pct exec 100 -- docker ps --filter 'name=kaf\\|mcparqa24'"
 
 # Запустить проектные MCP
-ssh YOUR_SERVER "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/projects && docker compose up -d'"
+ssh homeserver "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/projects && docker compose up -d'"
 
 # Добавить новый проект (редактировать docker-compose.yml)
 # 1. Раскомментировать шаблон в projects/docker-compose.yml
@@ -115,18 +115,18 @@ ssh YOUR_SERVER "pct exec 100 -- bash -c 'cd /opt/docker-infrastructure/projects
 ### Проверка volumes (КРИТИЧНО)
 ```bash
 # Список всех volumes
-ssh YOUR_SERVER "pct exec 100 -- docker volume ls"
+ssh homeserver "pct exec 100 -- docker volume ls"
 
 # Инспекция RLM volume (проверка что данные сохранены)
-ssh YOUR_SERVER "pct exec 100 -- docker volume inspect rlm_rlm-storage"
+ssh homeserver "pct exec 100 -- docker volume inspect rlm_rlm-storage"
 
 # Инспекция индексов общих MCP
-ssh YOUR_SERVER "pct exec 100 -- docker volume inspect common-mcp_help-chroma"
-ssh YOUR_SERVER "pct exec 100 -- docker volume inspect common-mcp_ssl-chroma"
-ssh YOUR_SERVER "pct exec 100 -- docker volume inspect common-mcp_templates-data"
+ssh homeserver "pct exec 100 -- docker volume inspect common-mcp_help-chroma"
+ssh homeserver "pct exec 100 -- docker volume inspect common-mcp_ssl-chroma"
+ssh homeserver "pct exec 100 -- docker volume inspect common-mcp_templates-data"
 
 # Размер volumes
-ssh YOUR_SERVER "pct exec 100 -- docker system df -v | grep -A 20 'Local Volumes'"
+ssh homeserver "pct exec 100 -- docker system df -v | grep -A 20 'Local Volumes'"
 ```
 
 ## Среда для MCP серверов (.env)
@@ -217,10 +217,10 @@ Agent: "Развёртываю 4 сервера:
 Agent: "✅ Развёртывание завершено!
 
 Проверка доступности:
-- minimkg-codemetadata: http://YOUR_SERVER:7500 ✅
-- minimkg-graph: http://YOUR_SERVER:7501 ✅
-- minimkg-minim-codemetadata: http://YOUR_SERVER:7510 ✅
-- minimkg-minim-graph: http://YOUR_SERVER:7511 ✅
+- minimkg-codemetadata: http://YOUR_GITEA_SERVER:7500 ✅
+- minimkg-graph: http://YOUR_GITEA_SERVER:7501 ✅
+- minimkg-minim-codemetadata: http://YOUR_GITEA_SERVER:7510 ✅
+- minimkg-minim-graph: http://YOUR_GITEA_SERVER:7511 ✅
 
 Индексация запущена (~60 минут).
 Перезапусти Cursor для загрузки новых MCP серверов."
@@ -233,7 +233,7 @@ Agent: "✅ Развёртывание завершено!
 ### Команда проверки
 ```bash
 # Проверить занятые порты в диапазоне 7500-7522
-ssh YOUR_SERVER "pct exec 100 -- bash -c 'for port in {7500..7522}; do if ss -tuln | grep -q :\$port; then echo \"\$port: ЗАНЯТ\"; else echo \"\$port: свободен\"; fi; done'"
+ssh homeserver "pct exec 100 -- bash -c 'for port in {7500..7522}; do if ss -tuln | grep -q :\$port; then echo \"\$port: ЗАНЯТ\"; else echo \"\$port: свободен\"; fi; done'"
 ```
 
 ### Алгоритм выбора портов
@@ -278,16 +278,16 @@ ssh YOUR_SERVER "pct exec 100 -- bash -c 'for port in {7500..7522}; do if ss -tu
 **Запуск миграции:**
 ```bash
 # 1. Загрузить compose файлы на сервер
-scp configs/docker-infrastructure/*.yml YOUR_SERVER:/tmp/
+scp configs/docker-infrastructure/*.yml homeserver:/tmp/
 
 # 2. Загрузить скрипт миграции
-scp scripts/migrate-docker-infrastructure.sh YOUR_SERVER:/tmp/
+scp scripts/migrate-docker-infrastructure.sh homeserver:/tmp/
 
 # 3. Запустить миграцию
-ssh YOUR_SERVER "pct exec 100 -- bash /tmp/migrate-docker-infrastructure.sh"
+ssh homeserver "pct exec 100 -- bash /tmp/migrate-docker-infrastructure.sh"
 
 # 4. Проверить результат
-ssh YOUR_SERVER "pct exec 100 -- docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
+ssh homeserver "pct exec 100 -- docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
 ```
 
 **После миграции:**
@@ -300,7 +300,7 @@ ssh YOUR_SERVER "pct exec 100 -- docker ps --format 'table {{.Names}}\t{{.Status
 
 ### Для RLM:
 1. Проверь что контейнер запущен
-2. Проверь healthcheck: `curl http://YOUR_SERVER:8200/health`
+2. Проверь healthcheck: `curl http://YOUR_GITEA_SERVER:8200/health`
 3. При проблемах — проверь логи: `docker logs rlm-mcp`
 4. **КРИТИЧНО:** Не удаляй volume `rlm_rlm-storage`
 

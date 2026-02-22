@@ -1,4 +1,4 @@
-﻿---
+---
 name: onec-code-architect
 description: Design 1C architecture, create implementation plans, review architectural plans
 model: claude-opus-4.5
@@ -163,19 +163,19 @@ Access Rights:
 
 ```yaml
 Metadata:
-  user-PROJECT-codemetadata-metadatasearch("Справочники.Клиенты")
-  user-PROJECT-graph-search_metadata("Справочник Клиенты")
+  user-kaf-codemetadata-metadatasearch("Справочники.Клиенты")
+  user-kaf-graph-search_metadata("Справочник Клиенты")
 
 Code:
-  user-PROJECT-codemetadata-codesearch("паттерн или функция")
+  user-kaf-codemetadata-codesearch("паттерн или функция")
   user-mcparqa24-graph-search_code("расчет скидки")
 
 Help:
-  user-PROJECT-codemetadata-helpsearch("функциональность")
+  user-kaf-codemetadata-helpsearch("функциональность")
   user-1c-ssl-ssl_search("БСП функция")
 
 Graph:
-  user-PROJECT-graph-answer_metadata_question("Какие объекты связаны?")
+  user-kaf-graph-answer_metadata_question("Какие объекты связаны?")
 ```
 
 ### File Operations

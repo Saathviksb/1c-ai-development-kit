@@ -1,4 +1,4 @@
-﻿---
+---
 name: 1c-project-init
 description: Initialize a new 1C project from a server database - create folder structure, copy skills, auto-detect 1C version, generate .1c-devbase.bat, dump configuration and extensions, setup OpenSpec and Git. Use when user requests "создать проект 1С", "инициализировать проект", "развернуть проект из базы", "init 1C project", or needs to bootstrap a new 1C development workspace from an existing database.
 ---
@@ -32,7 +32,7 @@ Automated 1C project initialization from a server database. Creates a complete d
 ## Personal Skill
 
 This skill is also installed as a **personal skill** at:
-`C:\Users\YOUR_USERNAME\.cursor\skills\1c-project-init\SKILL.md`
+`C:\Users\Arman\.cursor\skills\1c-project-init\SKILL.md`
 
 This makes it available in any project (including empty folders).
 
@@ -58,7 +58,7 @@ Test encoding: `.cursor/skills/1c-project-init/scripts/test-cyrillic.ps1`
 ### Check prerequisites
 
 ```powershell
-& "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\check-prerequisites.ps1" `
+& "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\check-prerequisites.ps1" `
   -Server "localhost:1641" `
   -Database "MyBase" `
   -Username "Admin"
@@ -71,8 +71,8 @@ Test encoding: `.cursor/skills/1c-project-init/scripts/test-cyrillic.ps1`
 ### Simple case (ASCII username or no auth)
 
 ```powershell
-& "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
-  -ProjectPath "C:\Users\YOUR_USERNAME\workspace\MyProject" `
+& "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
+  -ProjectPath "C:\Users\Arman\workspace\MyProject" `
   -Server "localhost:1641" `
   -Database "MyBase" `
   -Username "Admin" `
@@ -99,12 +99,12 @@ Test encoding: `.cursor/skills/1c-project-init/scripts/test-cyrillic.ps1`
 
 ### Port-to-Version Auto-Detection
 
-| Server Port | 1C Version | EDT project suffix |
-|-------------|------------|--------------------|
-| 1540, 1541  | 8.3.25     | `_25`              |
-| 1640, 1641  | 8.3.24     | `_24`              |
-| 1740, 1741  | 8.3.27     | `_27`              |
-| Other       | Latest installed | —            |
+| Server Port | 1C Version |
+|-------------|------------|
+| 1540, 1541  | 8.3.25     |
+| 1640, 1641  | 8.3.24     |
+| 1740, 1741  | 8.3.27     |
+| Other       | Latest installed |
 
 ---
 
@@ -152,8 +152,8 @@ Get-ChildItem "C:\Program Files\1cv8\" -Directory | Where-Object { $_.Name -like
 ### Step 2: Run init script (it detects existing config)
 
 ```powershell
-& "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
-  -ProjectPath "C:\Users\YOUR_USERNAME\workspace\MinimKG" `
+& "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
+  -ProjectPath "C:\Users\Arman\workspace\MinimKG" `
   -Server "localhost:1641" `
   -Database "Minim_kg" `
   -Force
@@ -177,7 +177,7 @@ Extensions **cannot be auto-discovered** for server databases (ibcmd doesn't sup
 ### Dump extensions after initialization
 
 ```powershell
-cd C:\Users\YOUR_USERNAME\workspace\MyProject
+cd C:\Users\Arman\workspace\MyProject
 .cursor\skills\1c-batch\scripts\dump-extension.bat src\cfe\Minim Minim
 ```
 
@@ -188,8 +188,8 @@ cd C:\Users\YOUR_USERNAME\workspace\MyProject
 ### ASCII username (one command)
 
 ```powershell
-& "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
-  -ProjectPath "C:\Users\YOUR_USERNAME\workspace\ERP_Dev" `
+& "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
+  -ProjectPath "C:\Users\Arman\workspace\ERP_Dev" `
   -Server "localhost:1540" `
   -Database "erp_dev" `
   -Username "Admin" `
@@ -200,7 +200,7 @@ cd C:\Users\YOUR_USERNAME\workspace\MyProject
 
 **Step 1** — Agent creates `.1c-devbase.bat` via Write tool:
 
-Write file `C:\Users\YOUR_USERNAME\workspace\MinimKG\.1c-devbase.bat` with content:
+Write file `C:\Users\Arman\workspace\MinimKG\.1c-devbase.bat` with content:
 ```bat
 @echo off
 set "ONEC_PATH=C:\Program Files\1cv8\8.3.24.1808\bin\1cv8.exe"
@@ -212,8 +212,8 @@ set "ONEC_PASSWORD="
 
 **Step 2** — Agent runs init:
 ```powershell
-& "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
-  -ProjectPath "C:\Users\YOUR_USERNAME\workspace\MinimKG" `
+& "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
+  -ProjectPath "C:\Users\Arman\workspace\MinimKG" `
   -Server "localhost:1641" `
   -Database "Minim_kg" `
   -Force
@@ -222,8 +222,8 @@ set "ONEC_PASSWORD="
 ### With extensions
 
 ```powershell
-& "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
-  -ProjectPath "C:\Users\YOUR_USERNAME\workspace\MinimKG" `
+& "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
+  -ProjectPath "C:\Users\Arman\workspace\MinimKG" `
   -Server "localhost:1641" `
   -Database "Minim_kg" `
   -Extensions @("Minim") `
@@ -233,8 +233,8 @@ set "ONEC_PASSWORD="
 ### No auth (empty username)
 
 ```powershell
-& "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
-  -ProjectPath "C:\Users\YOUR_USERNAME\workspace\TestProject" `
+& "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
+  -ProjectPath "C:\Users\Arman\workspace\TestProject" `
   -Server "localhost:1540" `
   -Database "test_db" `
   -Force
@@ -243,8 +243,8 @@ set "ONEC_PASSWORD="
 ### Explicit 1C path
 
 ```powershell
-& "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
-  -ProjectPath "C:\Users\YOUR_USERNAME\workspace\MyProject" `
+& "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\scripts\init-1c-project.ps1" `
+  -ProjectPath "C:\Users\Arman\workspace\MyProject" `
   -Server "localhost:1540" `
   -Database "MyBase" `
   -OneCPath "C:\Program Files\1cv8\8.3.25.1257\bin\1cv8.exe" `
@@ -324,18 +324,6 @@ MyProject/
 4. Use `1c-feature-dev-enhanced` skill for full development cycle
 5. Use `1c-help-mcp` skill for 1C documentation search
 
-### EDT Integration (optional but recommended)
-
-[EDT-MCP](https://github.com/DitriXNew/EDT-MCP) (by DitriX) enables AI to read live BSL modules, search code, find references, and validate queries directly in EDT.
-
-**Setup:**
-1. Install [EDT-MCP plugin](https://github.com/DitriXNew/EDT-MCP) (DitriX) in 1C:EDT
-2. Configure MCP server port in plugin settings (default: 8765)
-3. Add `edt-mcp` to project `.cursor/mcp.json` (see `templates/mcp.json`)
-4. Import project into EDT workspace — name must be Latin, convention: `ProjectName_<version_suffix>` (e.g. `MyProject_25`)
-
-**Key tools:** `list_projects`, `read_module_source`, `search_in_code`, `find_references`, `validate_query`, `get_project_errors`
-
 ### Optional (for full AI capabilities)
 6. **Export Configuration Report** (for MCP servers):
    - Open 1C Designer → Configuration → Reports → Configuration Report
@@ -393,7 +381,7 @@ After initialization, each project gets its own **project-specific MCP configura
 After `init-1c-project.ps1` completes:
 
 ```powershell
-cd C:\Users\YOUR_USERNAME\workspace\MyProject
+cd C:\Users\Arman\workspace\MyProject
 
 # 1. Export Configuration Report
 #    Designer → Configuration → Reports → Configuration Report
@@ -429,7 +417,7 @@ After indexing completes (~40-60 minutes):
 # Ctrl+Shift+P → "Reload Window"
 ```
 
-**Local model:** `qwen3:8b` via Ollama @ CT XXX (YOUR_RLM_SERVER:11434)
+**Local model:** `qwen3:8b` via Ollama @ CT 106 (YOUR_RLM_SERVER:11434)
 
 #### 3. Enable/Disable Project MCP
 

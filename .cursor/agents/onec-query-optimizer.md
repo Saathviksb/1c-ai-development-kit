@@ -1,4 +1,4 @@
-﻿---
+---
 name: onec-query-optimizer
 description: Optimize 1C queries for performance with index recommendations
 model: claude-sonnet-4.5
@@ -71,7 +71,7 @@ BSL LSP:
 
 MCP:
   - user-1c-code-checker-check_1c_code: Performance analysis
-  - user-PROJECT-codemetadata-codesearch: Find similar queries
+  - user-kaf-codemetadata-codesearch: Find similar queries
 
 RLM:
   - rlm_route_context: Get optimization patterns

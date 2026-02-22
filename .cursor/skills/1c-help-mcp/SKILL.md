@@ -1,7 +1,7 @@
-﻿# 1C Help MCP — Platform Documentation Search
+# 1C Help MCP — Platform Documentation Search
 
 **MCP Server:** 1c-help (comol/1c_help_mcp:latest)
-**Endpoint:** http://YOUR_SERVER:8003/mcp
+**Endpoint:** http://YOUR_GITEA_SERVER:8003/mcp
 **Status:** ⏳ Not deployed (awaiting large download)
 **Purpose:** Search 1C:Enterprise 8.3 platform documentation
 
@@ -281,9 +281,9 @@ Symptoms:
  - No results
 
 Diagnosis:
- 1. Check server status: curl http://YOUR_SERVER:8003/health
- 2. Check Docker container: ssh YOUR_SERVER "pct exec 100 -- docker ps | grep help-mcp"
- 3. Check logs: ssh YOUR_SERVER "pct exec 100 -- docker logs help-mcp --tail 50"
+ 1. Check server status: curl http://YOUR_GITEA_SERVER:8003/health
+ 2. Check Docker container: ssh homeserver "pct exec 100 -- docker ps | grep help-mcp"
+ 3. Check logs: ssh homeserver "pct exec 100 -- docker logs help-mcp --tail 50"
 
 Solutions:
  - Server not deployed: Deploy via docker-compose
@@ -381,7 +381,7 @@ Runtime cost:
 ## Related Documentation
 
 - MCP server config: `configs/mcp-shared/docker-compose.yml`
-- Cursor config: `C:\Users\YOUR_USERNAME\.cursor\mcp.json` (1c-help section)
+- Cursor config: `C:\Users\Arman\.cursor\mcp.json` (1c-help section)
 - Infrastructure map: `configs/infra-mcp/data/infrastructure.yaml`
 - Tool registry: `docs/mcp-tool-registry.md`
 

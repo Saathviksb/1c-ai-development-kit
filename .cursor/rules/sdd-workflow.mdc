@@ -1,4 +1,4 @@
-﻿# Specification-Driven Development (SDD) Workflow
+# Specification-Driven Development (SDD) Workflow
 
 Workflow для разработки доработок в 1С с использованием спецификаций.
 
@@ -498,8 +498,8 @@ openspec/changes/[feature-name]/
   - Phase 6: Проверка синтаксиса и логики
 
 Команды:
-  user-PROJECT-codemetadata-metadatasearch(query)
-  user-PROJECT-codemetadata-codesearch(query)
+  user-kaf-codemetadata-metadatasearch(query)
+  user-kaf-codemetadata-codesearch(query)
   user-1c-syntax-checker-syntaxcheck(code)
   user-1c-code-checker-check_1c_code(code, check_type)
 ```

@@ -1,4 +1,4 @@
-﻿---
+---
 name: 1c-help-mcp
 description: "Поиск по документации платформы 1С через MCP сервер. Методы, функции, синтаксис, API платформы."
 allowed-tools:
@@ -12,7 +12,7 @@ allowed-tools:
 
 ## MCP сервер
 
-- **Сервер**: PROJECT-codemetadata (CT XXX, YOUR_MCP_SERVER:7530) — инструмент `helpsearch`
+- **Сервер**: minimkg-enhanced (CT 105, YOUR_MCP_SERVER:7530) — инструмент `helpsearch`
 - Содержит 927 документов документации, 54178 документов кода
 
 ## Когда использовать

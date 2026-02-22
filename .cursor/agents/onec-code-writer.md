@@ -1,4 +1,4 @@
-﻿---
+---
 name: onec-code-writer
 description: Write and modify 1C code - create modules, procedures, functions, queries, refactor existing code
 model: claude-sonnet-4.5
@@ -89,7 +89,7 @@ Use MCP when:
 Tools:
   - user-1c-help-docsearch("method name")
   - user-1c-ssl-ssl_search("БСП functionality")
-  - user-PROJECT-codemetadata-codesearch("existing implementation")
+  - user-kaf-codemetadata-codesearch("existing implementation")
 ```
 
 ---
@@ -148,10 +148,10 @@ Templates:
   user-1c-templates-templatesearch("описание задачи")
 
 Metadata:
-  user-PROJECT-codemetadata-metadatasearch("Справочники.Клиенты")
+  user-kaf-codemetadata-metadatasearch("Справочники.Клиенты")
 
 Code search:
-  user-PROJECT-codemetadata-codesearch("функция или паттерн")
+  user-kaf-codemetadata-codesearch("функция или паттерн")
 ```
 
 ### File Operations
@@ -220,7 +220,7 @@ Write:
    - user-1c-help-docsearch("variable name")
 
 3. Find existing code:
-   - user-PROJECT-codemetadata-codesearch("similar functionality")
+   - user-kaf-codemetadata-codesearch("similar functionality")
    - Reuse instead of rewriting
 ```
 

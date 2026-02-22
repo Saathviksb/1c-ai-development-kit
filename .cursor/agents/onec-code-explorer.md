@@ -1,4 +1,4 @@
-﻿---
+---
 name: onec-code-explorer
 description: Deep analysis of 1C codebase - tracing execution paths, finding patterns, understanding architecture
 model: claude-sonnet-4.5
@@ -171,25 +171,25 @@ Platform mechanisms:
 
 ```yaml
 Metadata search:
-  user-PROJECT-codemetadata-metadatasearch("Справочники.Клиенты.Реквизиты")
-  user-PROJECT-graph-search_metadata("Справочник Клиенты")
+  user-kaf-codemetadata-metadatasearch("Справочники.Клиенты.Реквизиты")
+  user-kaf-graph-search_metadata("Справочник Клиенты")
   user-mcparqa24-codemetadata-metadatasearch("Клиенты")
 
 Code search:
-  user-PROJECT-codemetadata-codesearch("функция или паттерн")
+  user-kaf-codemetadata-codesearch("функция или паттерн")
   user-mcparqa24-codemetadata-codesearch("ПолучитьДанные")
   user-mcparqa24-graph-search_code("расчет скидки", search_type="semantic")
 
 Help search:
-  user-PROJECT-codemetadata-helpsearch("описание функциональности")
+  user-kaf-codemetadata-helpsearch("описание функциональности")
   user-mcparqa24-codemetadata-helpsearch("работа с документами")
 
 Graph queries:
-  user-PROJECT-graph-answer_metadata_question("Какие объекты связаны с Клиентами?")
+  user-kaf-graph-answer_metadata_question("Какие объекты связаны с Клиентами?")
   user-mcparqa24-graph-answer_metadata_question("Где используется реквизит ИНН?")
 
 Business search:
-  user-PROJECT-graph-business_search("справочник для хранения клиентов")
+  user-kaf-graph-business_search("справочник для хранения клиентов")
   user-mcparqa24-graph-business_search("документ продажи")
 ```
 
@@ -244,8 +244,8 @@ Semantic search:
    - Search for procedures: Grep("Процедура.*[Feature]")
 
 3. Identify main objects:
-   - Metadata search: user-PROJECT-codemetadata-metadatasearch("[Feature]")
-   - Graph search: user-PROJECT-graph-search_metadata("[Feature]")
+   - Metadata search: user-kaf-codemetadata-metadatasearch("[Feature]")
+   - Graph search: user-kaf-graph-search_metadata("[Feature]")
 
 4. Load context from RLM:
    - Past patterns: user-rlm-toolkit-rlm_route_context("паттерны [feature]")
@@ -277,7 +277,7 @@ Semantic search:
 
 ```yaml
 1. Identify patterns:
-   - Similar implementations: user-PROJECT-codemetadata-codesearch("паттерн")
+   - Similar implementations: user-kaf-codemetadata-codesearch("паттерн")
    - БСП usage: user-1c-ssl-ssl_search("функциональность")
    - Architecture patterns: Document in notes
 

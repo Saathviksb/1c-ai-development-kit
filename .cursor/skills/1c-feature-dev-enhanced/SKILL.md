@@ -1,4 +1,4 @@
-﻿---
+---
 name: 1c-feature-dev-enhanced
 description: Complete 1C feature development cycle - from analysis to implementation with БСП compliance. Use when user requests "создать доработку 1C", "реализовать функционал 1C", "добавить новую возможность в 1C", "разработать модуль 1C", or needs full development cycle from analysis to implementation with validation.
 ---
@@ -403,8 +403,8 @@ Phase 7: bsl_lsp_diagnostics(file_path) для проверки качества
 
 ```yaml
 Phase 2: 
-  - user-PROJECT-codemetadata-metadatasearch(query)
-  - user-PROJECT-codemetadata-codesearch(query)
+  - user-kaf-codemetadata-metadatasearch(query)
+  - user-kaf-codemetadata-codesearch(query)
 
 Phase 6:
   - user-1c-syntax-checker-syntaxcheck(code)

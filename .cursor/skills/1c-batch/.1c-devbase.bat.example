@@ -41,7 +41,7 @@ REM set "ONEC_PASSWORD="
 
 REM Пример 2: Серверная база на удаленном сервере
 REM set "ONEC_PATH=C:\Program Files\1cv8\8.3.24.1467\bin\1cv8.exe"
-REM set "ONEC_SERVER=192.168.0.105"
+REM set "ONEC_SERVER=YOUR_ONEC_SERVER"
 REM set "ONEC_BASE=accounting"
 REM set "ONEC_USER=Developer"
 REM set "ONEC_PASSWORD=SecurePassword123"

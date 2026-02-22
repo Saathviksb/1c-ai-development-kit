@@ -1,4 +1,4 @@
-﻿# Changelog - 1c-project-init
+# Changelog - 1c-project-init
 
 ## 2026-02-10 - MCP Folders Support
 
@@ -84,10 +84,10 @@ cmd /c "mklink /J `"mcp\base\src`" `"src\cf`""
 cmd /c "mklink /J `"mcp\ext\src`" `"src\cfe`""
 
 # 3. Copy README
-Copy-Item "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\templates\mcp-README.md" "mcp\README.md"
+Copy-Item "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\templates\mcp-README.md" "mcp\README.md"
 
 # 4. Copy export guide
-Copy-Item "C:\Users\YOUR_USERNAME\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\docs\export-configuration-report.md" "docs\"
+Copy-Item "C:\Users\Arman\workspace\Home_Infrastructure\.cursor\skills\1c-project-init\docs\export-configuration-report.md" "docs\"
 
 # 5. Update .gitignore
 Add-Content .gitignore @"

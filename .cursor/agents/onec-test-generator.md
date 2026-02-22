@@ -1,4 +1,4 @@
-﻿---
+---
 name: onec-test-generator
 description: Generate Vanessa BDD and YaXUnit tests for 1C code
 model: claude-sonnet-4.5
@@ -104,7 +104,7 @@ Skills:
 
 MCP:
   - user-1c-templates-templatesearch: Test templates
-  - user-PROJECT-codemetadata-codesearch: Find testable code
+  - user-kaf-codemetadata-codesearch: Find testable code
   - YaXUnit Runner MCP: Execute tests (when available)
 
 BSL LSP:

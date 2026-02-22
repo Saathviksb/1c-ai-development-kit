@@ -1,0 +1,119 @@
+# {{PROJECT_NAME}} — Claude Code Configuration
+
+## Project
+
+{{PROJECT_DESCRIPTION}}
+
+## 1C Connection
+
+- Platform: 1C:Enterprise {{V8_VERSION}}
+- Server: {{SERVER}}:{{PORT}}  (onec-server-{{SERVER_SUFFIX}} on CT107)
+- Base: {{BASE_NAME}}
+- Web (CT107): `http://YOUR_EDT_SERVER:{{WEB_PORT}}/{{PUBLICATION}}/`
+- Publication: `http://localhost/{{PUBLICATION}}/hs/ai/`
+- EDT project: `{{EDT_PROJECT_NAME}}` on CT107 (`/opt/edt-workspace/{{EDT_PROJECT_NAME}}`)
+
+## Structure
+
+```
+src/                   — source code
+openspec/              — SDD specs and proposals
+.claude/skills/        — skills for Claude Code
+.claude/docs/          — 1C platform specs
+```
+
+## Skills (key commands)
+
+### Metadata objects
+- `/meta-compile`, `/meta-edit`, `/meta-info`, `/meta-remove`, `/meta-validate`
+
+### Forms
+- `/form-compile`, `/form-edit`, `/form-add`, `/form-info`, `/form-validate`
+
+### External processors & reports
+- `/epf-init`, `/epf-build`, `/epf-dump`, `/epf-validate`
+- `/erf-init`, `/erf-build`, `/erf-dump`, `/erf-validate`
+
+### BSP integration
+- `/epf-bsp-init`, `/epf-bsp-add-command`, `/bsp-patterns`
+
+### SKD (reports)
+- `/skd-compile`, `/skd-edit`, `/skd-info`, `/skd-validate`
+
+### Layouts (print forms)
+- `/mxl-compile`, `/mxl-decompile`, `/mxl-info`, `/mxl-validate`
+
+### Roles & permissions
+- `/role-compile`, `/role-info`, `/role-validate`
+
+### Configuration & extensions
+- `/cf-init`, `/cf-edit`, `/cf-info`, `/cf-validate`
+- `/cfe-init`, `/cfe-borrow`, `/cfe-patch-method`, `/cfe-validate`, `/cfe-diff`
+
+### Database
+- `/db-create`, `/db-list`, `/db-dump-cf`, `/db-load-cf`
+- `/db-dump-xml`, `/db-load-xml`, `/db-update`, `/db-run`, `/db-load-git`
+
+### Workflow
+- `/1c-feature-dev` — full 9-phase dev cycle
+- `/1c-help-mcp` — 1C platform docs search
+- `/1c-query-opt` — query optimization
+
+## Development rules
+
+### 1C coding
+- Follow BSP and ITS standards
+- Cyrillic for 1C/BSL code, Latin for infrastructure
+- Tabs for indentation in BSL
+- UTF-8 BOM for PowerShell with Cyrillic
+
+### SDD Workflow
+- Use `/1c-feature-dev` for complex features
+- Spec BEFORE code (`openspec/changes/`)
+- Review plan BEFORE implementation
+
+### Security
+- NEVER force push to main/master
+- DO NOT commit credentials, .1c-devbase.bat, .env
+- Do not skip git hooks
+
+### Model selection
+- Sonnet for 90%+ tasks
+- Opus for architecture, security, production bugs
+
+### Context
+- RLM-first: check RLM before reading files
+- Save decisions to RLM after completing tasks
+
+## MCP servers
+
+General (CT103, YOUR_MCP_SERVER) — all 1C projects:
+- `rlm-toolkit` (CT105, YOUR_RLM_SERVER:8200) — persistent memory
+- `1c-help` (:8003) — 1C platform docs
+- `1c-ssl` (:8008) — BSP docs
+- `1c-templates` (:8004) — 1C code templates
+- `1c-syntax-checker` (:8002) — BSL syntax check
+- `1c-code-checker` (:8007) — logic check via 1C Companion
+- `1c-forms` (:8011) — managed forms context
+- `playwright` — browser automation for web client debugging
+
+EDT (CT107, YOUR_EDT_SERVER):
+- `edt-mcp` (:8765) — read modules, search code, find references, validate queries, get errors. Requires open project in EDT. EDT project: `{{EDT_PROJECT_NAME}}`
+
+Project-specific (add manually to `.mcp.json`):
+- `1c-ai-debug` — 1C HTTP API as MCP tools (query data, catalogs, documents, metadata). Bridge: `mcp-1c-bridge.py --url http://localhost/{{PUBLICATION}}/hs/ai --user ... --password ...`
+- `{project}-enhanced` (CT104) — semantic code search
+
+### Search rules: Grep vs MCP
+- Project code → Grep
+- Metadata → Grep/Glob on XML files
+- 1C platform docs → `1c-help`
+- BSP → `1c-ssl`
+
+## OpenSpec
+
+- `openspec/project.md` — project context
+- `openspec/changes/` — active proposals
+- `openspec/specs/` — feature specs
+
+Skills: `/openspec-proposal`, `/openspec-apply`, `/openspec-archive`

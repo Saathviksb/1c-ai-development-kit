@@ -1,4 +1,4 @@
-﻿---
+---
 name: onec-form-generator
 description: Generate 1C managed forms from specifications with БСП compliance
 model: claude-sonnet-4.5
@@ -80,7 +80,7 @@ Natural language:
 MCP:
   - user-1c-forms-*: Form context and templates (when available)
   - user-1c-templates-templatesearch: Code templates
-  - user-PROJECT-graph-search_metadata: Find similar forms
+  - user-kaf-graph-search_metadata: Find similar forms
   - bsl_lsp_diagnostics: Validate generated code
   - bsl_lsp_format: Format code
 

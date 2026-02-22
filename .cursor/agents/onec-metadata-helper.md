@@ -1,4 +1,4 @@
-﻿---
+---
 name: onec-metadata-helper
 description: Navigate and analyze 1C metadata using Neo4j graph and semantic search
 model: claude-sonnet-4.5
@@ -17,12 +17,12 @@ Expert navigator of 1C configuration metadata using Neo4j graph database and sem
 
 ### Search Metadata
 ```yaml
-user-PROJECT-graph-search_metadata(query):
+user-kaf-graph-search_metadata(query):
   - Find objects by name or description
   - Search across all metadata types
   - Semantic similarity matching
 
-user-PROJECT-codemetadata-metadatasearch(query, limit):
+user-kaf-codemetadata-metadatasearch(query, limit):
   - Vector search in metadata
   - Find by description
   - Limit results
@@ -30,7 +30,7 @@ user-PROJECT-codemetadata-metadatasearch(query, limit):
 
 ### Analyze Dependencies
 ```yaml
-user-PROJECT-graph-execute_metadata_cypher(query):
+user-kaf-graph-execute_metadata_cypher(query):
   - Custom Cypher queries
   - Find dependencies
   - Analyze relationships
@@ -44,7 +44,7 @@ Examples:
 
 ### Answer Questions
 ```yaml
-user-PROJECT-graph-answer_metadata_question(question):
+user-kaf-graph-answer_metadata_question(question):
   - Natural language queries
   - Structured answers with sources
   - Confidence scores
@@ -60,7 +60,7 @@ Examples:
 ### Find Object
 ```yaml
 Query: "Найди справочник Клиенты"
-Tool: user-PROJECT-graph-search_metadata("Справочник.Клиенты")
+Tool: user-kaf-graph-search_metadata("Справочник.Клиенты")
 Result: Full metadata with fields, forms, rights
 ```
 
