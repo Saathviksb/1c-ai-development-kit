@@ -99,12 +99,12 @@ Test encoding: `.cursor/skills/1c-project-init/scripts/test-cyrillic.ps1`
 
 ### Port-to-Version Auto-Detection
 
-| Server Port | 1C Version |
-|-------------|------------|
-| 1540, 1541  | 8.3.25     |
-| 1640, 1641  | 8.3.24     |
-| 1740, 1741  | 8.3.27     |
-| Other       | Latest installed |
+| Server Port | 1C Version | EDT project suffix |
+|-------------|------------|--------------------|
+| 1540, 1541  | 8.3.25     | `_25`              |
+| 1640, 1641  | 8.3.24     | `_24`              |
+| 1740, 1741  | 8.3.27     | `_27`              |
+| Other       | Latest installed | —            |
 
 ---
 
@@ -323,6 +323,18 @@ MyProject/
 3. Use `1c-batch` skill for dump/load operations
 4. Use `1c-feature-dev-enhanced` skill for full development cycle
 5. Use `1c-help-mcp` skill for 1C documentation search
+
+### EDT Integration (optional but recommended)
+
+EDT MCP Server (CodePilot1C plugin) enables AI to read live BSL modules, search code, find references, and validate queries directly in EDT.
+
+**Setup:**
+1. Install CodePilot1C plugin in 1C:EDT
+2. Configure MCP server port in plugin settings (default: 8765)
+3. Add `edt-mcp` to project `.cursor/mcp.json` (see `templates/mcp.json`)
+4. Import project into EDT workspace — name must be Latin, convention: `ProjectName_<version_suffix>` (e.g. `MyProject_25`)
+
+**Key tools:** `list_projects`, `read_module_source`, `search_in_code`, `find_references`, `validate_query`, `get_project_errors`
 
 ### Optional (for full AI capabilities)
 6. **Export Configuration Report** (for MCP servers):
