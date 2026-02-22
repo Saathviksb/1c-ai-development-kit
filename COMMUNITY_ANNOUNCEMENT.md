@@ -1,4 +1,4 @@
-# Шаблон анонса для сообщества
+﻿# Шаблон анонса для сообщества
 
 ## Для Telegram (t.me/comol_it_does_matter)
 
@@ -11,7 +11,7 @@
 • 9 правил для контроля качества
 • Полная документация с примерами
 
-🔗 GitHub: https://github.com/Jefest9988/1c-ai-development-kit
+🔗 GitHub: https://github.com/Arman-Kudaibergenov/1c-ai-development-kit
 📄 Лицензия: MIT (бесплатно для всех)
 
 🙏 Огромная благодарность @comol_foa за:
@@ -81,7 +81,7 @@
 ## Quick Start
 
 \`\`\`bash
-git clone https://github.com/Jefest9988/1c-ai-development-kit.git
+git clone https://github.com/Arman-Kudaibergenov/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 cp -r .cursor/* /path/to/your-project/.cursor/
 \`\`\`
@@ -105,8 +105,8 @@ AI автоматически использует агента `onec-code-revie
 
 ## Ссылки
 
-- GitHub: https://github.com/Jefest9988/1c-ai-development-kit
-- Документация: https://github.com/Jefest9988/1c-ai-development-kit#readme
+- GitHub: https://github.com/Arman-Kudaibergenov/1c-ai-development-kit
+- Документация: https://github.com/Arman-Kudaibergenov/1c-ai-development-kit#readme
 - MCP-серверы: https://vibecoding1c.ru/mcp_server
 - Сообщество: https://t.me/comol_it_does_matter
 
@@ -132,7 +132,7 @@ AI автоматически использует агента `onec-code-revie
 
 Все бесплатно, лицензия MIT.
 
-GitHub: https://github.com/Jefest9988/1c-ai-development-kit
+GitHub: https://github.com/Arman-Kudaibergenov/1c-ai-development-kit
 
 Основано на работах:
 • Олег Филиппов (vibecoding1c.ru) — MCP-серверы
@@ -154,7 +154,7 @@ GitHub: https://github.com/Jefest9988/1c-ai-development-kit
 
 Лицензия MIT — используйте бесплатно!
 
-🔗 https://github.com/Jefest9988/1c-ai-development-kit
+🔗 https://github.com/Arman-Kudaibergenov/1c-ai-development-kit
 
 #1С #AI #разработка #opensource
 ```

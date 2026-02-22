@@ -9,7 +9,7 @@ allowed-tools:
 
 # /edt-add-project — Add project to EDT workspace (CT107)
 
-Script: `C:\Users\Arman\workspace\1c-AI-workspace\.claude\skills\1c-project-init\scripts\edt-import.ps1`
+Script: `YOUR_KIT_ROOT\.claude\skills\1c-project-init\scripts\edt-import.ps1`
 
 ## Step 1 — Determine mode and collect params
 
@@ -47,7 +47,7 @@ ssh root@YOUR_EDT_SERVER "ls -lh '<Source>'"  # if on CT107
 ## Step 3 — Run script
 
 ```powershell
-powershell.exe -NoProfile -File "C:\Users\Arman\workspace\1c-AI-workspace\.claude\skills\1c-project-init\scripts\edt-import.ps1" `
+powershell.exe -NoProfile -File "YOUR_KIT_ROOT\.claude\skills\1c-project-init\scripts\edt-import.ps1" `
   -Mode <mode> `
   -Source "<source>" `
   -ProjectName "<name>" `
@@ -92,7 +92,7 @@ Tell user:
 - 1cedtcli: `/opt/edt-app/data/1cedtcli`
 - Docker containers: `onec-server-24` (8.3.24, port 1641), `onec-server-25` (8.3.25, port 1541)
 - ibcmd inside Docker: `/opt/1cv8/x86_64/8.3.24.XXXX/ibcmd`
-- PG inside Docker: host=`onec-postgres`, user=`onec`, pwd=`Pg1cStr0ng`
+- PG inside Docker: host=`onec-postgres`, user=`onec`, pwd=`YOUR_PG_PASSWORD`
 - DT files on CT107: `/mnt/data/`
 - Deploy dir: `/mnt/data/deploy/`
 

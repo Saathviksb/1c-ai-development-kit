@@ -1,4 +1,4 @@
-# 1C AI Development Kit v1.0.0
+﻿# 1C AI Development Kit v1.0.0
 
 Первый публичный релиз комплексного набора инструментов для разработки на 1С с использованием AI.
 
@@ -63,7 +63,7 @@
 
 ```bash
 # Клонируйте репозиторий
-git clone https://github.com/Jefest9988/1c-ai-development-kit.git
+git clone https://github.com/Arman-Kudaibergenov/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 
 # Скопируйте в ваш проект
@@ -108,9 +108,9 @@ MIT License - см. [LICENSE](LICENSE)
 
 ## 📞 Контакты
 
-- 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
+- 💬 Telegram: [@Arman-Kudaibergenov](https://t.me/Arman-Kudaibergenov)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
-- 🐙 GitHub: [github.com/Jefest9988/1c-ai-development-kit](https://github.com/Jefest9988/1c-ai-development-kit)
+- 🐙 GitHub: [github.com/Arman-Kudaibergenov/1c-ai-development-kit](https://github.com/Arman-Kudaibergenov/1c-ai-development-kit)
 
 ---
 

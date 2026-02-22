@@ -1,4 +1,4 @@
-# Часто задаваемые вопросы (FAQ)
+﻿# Часто задаваемые вопросы (FAQ)
 
 ## Общие вопросы
 
@@ -23,7 +23,7 @@
 ### Как установить базовый набор?
 
 ```bash
-git clone https://github.com/Jefest9988/1c-ai-development-kit.git
+git clone https://github.com/Arman-Kudaibergenov/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 
 # Скопируйте в ваш проект
@@ -232,7 +232,7 @@ MIT License — можно использовать, модифицироват�
 
 ### Где задать вопрос?
 
-- 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
+- 💬 Telegram: [@Arman-Kudaibergenov](https://t.me/Arman-Kudaibergenov)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
 - 🐛 GitHub Issues: для багов и предложений
 - 🌐 Сообщество вайбкодинга: [t.me/comol_it_does_matter](https://t.me/comol_it_does_matter)
@@ -302,4 +302,4 @@ MIT License — можно использовать, модифицироват�
 
 ---
 
-**Не нашли ответ?** Создайте [issue](https://github.com/Jefest9988/1c-ai-development-kit/issues) или напишите нам!
+**Не нашли ответ?** Создайте [issue](https://github.com/Arman-Kudaibergenov/1c-ai-development-kit/issues) или напишите нам!

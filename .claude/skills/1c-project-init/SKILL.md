@@ -13,7 +13,7 @@ allowed-tools:
 
 # /1c-project-init — Initialize or enrich 1C project
 
-Source workspace: `C:\Users\Arman\workspace\ai\1c-AI-workspace`
+Source workspace: `YOUR_KIT_ROOT` (path where 1c-ai-development-kit is cloned)
 
 ## Mode detection
 
@@ -29,7 +29,7 @@ Source workspace: `C:\Users\Arman\workspace\ai\1c-AI-workspace`
 ### 2. Run init script
 
 ```powershell
-powershell.exe -NoProfile -File "C:\Users\Arman\workspace\ai\1c-AI-workspace\.claude\skills\1c-project-init\scripts\init.ps1" -TargetPath "<target>" -Mode <new|enrich>
+powershell.exe -NoProfile -File "YOUR_KIT_ROOT\.claude\skills\1c-project-init\scripts\init.ps1" -TargetPath "<target>" -Mode <new|enrich>
 ```
 
 Script output lists what was copied/updated.
@@ -51,7 +51,7 @@ Platform → server mapping (all on CT107 / YOUR_EDT_SERVER):
 
 ### 4. Generate CLAUDE.md
 
-Read template: `C:\Users\Arman\workspace\ai\1c-AI-workspace\.claude\skills\1c-project-init\templates\CLAUDE.md.template`
+Read template: `YOUR_KIT_ROOT\.claude\skills\1c-project-init\templates\CLAUDE.md.template`
 Fill all placeholders:
 - `{{PROJECT_NAME}}` — project name
 - `{{PROJECT_DESCRIPTION}}` — brief description
@@ -68,7 +68,7 @@ Write to `<target>/CLAUDE.md`.
 
 ### 5. Generate .mcp.json
 
-Read template: `C:\Users\Arman\workspace\ai\1c-AI-workspace\.claude\skills\1c-project-init\templates\mcp.json.template`
+Read template: `YOUR_KIT_ROOT\.claude\skills\1c-project-init\templates\mcp.json.template`
 Replace `{{PROJECT_NAME}}` and `{{PUBLICATION}}` placeholders.
 Write to `<target>/.mcp.json`.
 
@@ -117,7 +117,7 @@ If yes — determine mode:
 
 Run:
 ```powershell
-powershell.exe -NoProfile -File "C:\Users\Arman\workspace\ai\1c-AI-workspace\.claude\skills\1c-project-init\scripts\edt-import.ps1" `
+powershell.exe -NoProfile -File "YOUR_KIT_ROOT\.claude\skills\1c-project-init\scripts\edt-import.ps1" `
   -Mode <mode> -Source "<path-on-CT107>" -ProjectName "<EDT_PROJECT_NAME>" `
   -PlatformVersion "<V8_VERSION>" -ServerVersion "<SERVER_SUFFIX>"
 ```

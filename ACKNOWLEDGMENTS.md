@@ -1,4 +1,4 @@
-# Благодарности
+﻿# Благодарности
 
 Этот проект стал возможен благодаря вкладу многих людей и сообществ.
 
@@ -196,7 +196,7 @@ mcp-bsl-lsp-bridge — один из двух **бесплатных** MCP-се�
 
 ## 📞 Контакты автора проекта
 
-- 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
+- 💬 Telegram: [@Arman-Kudaibergenov](https://t.me/Arman-Kudaibergenov)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
 - 🐙 GitHub: [github.com/Arman-Kudaibergenov/1c-ai-development-kit](https://github.com/Arman-Kudaibergenov/1c-ai-development-kit)
 

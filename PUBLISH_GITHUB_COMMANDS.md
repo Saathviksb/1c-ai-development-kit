@@ -16,7 +16,7 @@ git log --oneline -n 5
 ## 3. Добавьте GitHub remote
 
 ```powershell
-git remote add github https://github.com/Jefest9988/1c-ai-development-kit.git
+git remote add github https://github.com/Arman-Kudaibergenov/1c-ai-development-kit.git
 ```
 
 ## 4. Проверьте remotes
@@ -27,8 +27,8 @@ git remote -v
 
 Должно показать:
 ```
-github  https://github.com/Jefest9988/1c-ai-development-kit.git (fetch)
-github  https://github.com/Jefest9988/1c-ai-development-kit.git (push)
+github  https://github.com/Arman-Kudaibergenov/1c-ai-development-kit.git (fetch)
+github  https://github.com/Arman-Kudaibergenov/1c-ai-development-kit.git (push)
 ```
 
 ## 5. Push на GitHub
@@ -39,7 +39,7 @@ git push -u github main
 ```
 
 Если попросит авторизацию:
-- Username: `Jefest9988`
+- Username: `Arman-Kudaibergenov`
 - Password: используйте **Personal Access Token** (не обычный пароль)
 
 ### Как создать Personal Access Token:
@@ -65,7 +65,7 @@ git push github v1.0.0
 
 ## 7. Обновите ссылки в документации
 
-После публикации замените `yourusername` на `Jefest9988` в файлах:
+После публикации замените `yourusername` на `Arman-Kudaibergenov` в файлах:
 - README.md
 - CONTRIBUTING.md
 - QUICK_START.md
@@ -84,8 +84,8 @@ $files = @(
 
 foreach ($file in $files) {
     $content = Get-Content $file -Raw
-    $content = $content -replace "yourusername", "Jefest9988"
-    $content = $content -replace "github.com/yourusername", "github.com/Jefest9988"
+    $content = $content -replace "yourusername", "Arman-Kudaibergenov"
+    $content = $content -replace "github.com/yourusername", "github.com/Arman-Kudaibergenov"
     Set-Content $file -Value $content -NoNewline
 }
 
@@ -97,7 +97,7 @@ git push github main
 
 ## 8. Настройте GitHub репозиторий
 
-На странице https://github.com/Jefest9988/1c-ai-development-kit:
+На странице https://github.com/Arman-Kudaibergenov/1c-ai-development-kit:
 
 ### About (правая колонка)
 - Description: `Comprehensive AI-powered development toolkit for 1C:Enterprise platform`
@@ -131,7 +131,7 @@ git push github main
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/Jefest9988/1c-ai-development-kit.git
+git clone https://github.com/Arman-Kudaibergenov/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 cp -r .cursor/* /path/to/your-1c-project/.cursor/
 ```
@@ -164,9 +164,9 @@ MIT License - см. [LICENSE](LICENSE)
 
 ```markdown
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub release](https://img.shields.io/github/release/Jefest9988/1c-ai-development-kit.svg)](https://github.com/Jefest9988/1c-ai-development-kit/releases)
-[![GitHub stars](https://img.shields.io/github/stars/Jefest9988/1c-ai-development-kit.svg)](https://github.com/Jefest9988/1c-ai-development-kit/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/Jefest9988/1c-ai-development-kit.svg)](https://github.com/Jefest9988/1c-ai-development-kit/issues)
+[![GitHub release](https://img.shields.io/github/release/Arman-Kudaibergenov/1c-ai-development-kit.svg)](https://github.com/Arman-Kudaibergenov/1c-ai-development-kit/releases)
+[![GitHub stars](https://img.shields.io/github/stars/Arman-Kudaibergenov/1c-ai-development-kit.svg)](https://github.com/Arman-Kudaibergenov/1c-ai-development-kit/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/Arman-Kudaibergenov/1c-ai-development-kit.svg)](https://github.com/Arman-Kudaibergenov/1c-ai-development-kit/issues)
 ```
 
 Коммит:
@@ -193,7 +193,7 @@ git push github main
 - 9 правил
 - Документация и примеры
 
-GitHub: https://github.com/Jefest9988/1c-ai-development-kit
+GitHub: https://github.com/Arman-Kudaibergenov/1c-ai-development-kit
 
 Благодарность @comol_foa за MCP-серверы и вдохновение! 🙏
 ```
@@ -208,7 +208,7 @@ GitHub: https://github.com/Jefest9988/1c-ai-development-kit
 - [ ] Push на GitHub (`git push -u github main`)
 - [ ] Создал Personal Access Token (если нужен)
 - [ ] Push тега v1.0.0
-- [ ] Обновил ссылки (yourusername → Jefest9988)
+- [ ] Обновил ссылки (yourusername → Arman-Kudaibergenov)
 - [ ] Настроил About и Topics
 - [ ] Создал Release v1.0.0
 - [ ] Добавил бейджи в README

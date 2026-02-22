@@ -1,4 +1,4 @@
-# Quick Start
+﻿# Quick Start
 
 Быстрый старт для нетерпеливых 😊
 
@@ -7,7 +7,7 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/Jefest9988/1c-ai-development-kit.git
+git clone https://github.com/Arman-Kudaibergenov/1c-ai-development-kit.git
 cd 1c-ai-development-kit
 ```
 
@@ -148,7 +148,7 @@ python server.py
 
 ## Помощь
 
-- 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
+- 💬 Telegram: [@Arman-Kudaibergenov](https://t.me/Arman-Kudaibergenov)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
-- 🐛 Issues: https://github.com/Jefest9988/1c-ai-development-kit/issues
+- 🐛 Issues: https://github.com/Arman-Kudaibergenov/1c-ai-development-kit/issues
 - 🌐 Сообщество: [t.me/comol_it_does_matter](https://t.me/comol_it_does_matter) (вайбкодинг для 1С)

@@ -1,4 +1,4 @@
-# 1C AI Development Kit
+﻿# 1C AI Development Kit
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-supported-blue.svg)](https://claude.ai/code)
@@ -107,7 +107,7 @@ XML-форматы объектов 1С, JSON DSL для компиляции б
 
 ## Контакты
 
-- 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
+- 💬 Telegram: [@Arman-Kudaibergenov](https://t.me/Arman-Kudaibergenov)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
 - 🐙 GitHub: [github.com/Arman-Kudaibergenov/1c-ai-development-kit](https://github.com/Arman-Kudaibergenov/1c-ai-development-kit)
 
