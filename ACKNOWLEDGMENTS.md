@@ -196,7 +196,7 @@ mcp-bsl-lsp-bridge — один из двух **бесплатных** MCP-се�
 
 ## 📞 Контакты автора проекта
 
-- 💬 Telegram: [@Arman-Kudaibergenov](https://t.me/Arman-Kudaibergenov)
+- 💬 Telegram: [@Jefest9988](https://t.me/Jefest9988)
 - 📧 Email: arman.kudaibergenov.mail@gmail.com
 - 🐙 GitHub: [github.com/Arman-Kudaibergenov/1c-ai-development-kit](https://github.com/Arman-Kudaibergenov/1c-ai-development-kit)
 
